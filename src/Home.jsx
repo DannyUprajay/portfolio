@@ -113,11 +113,11 @@ const Home = () => {
 </header>
             <nav className=" ">
                 <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <h3 className="self-center text-white text-2xl font-semibold whitespace-nowrap ">
-                            Uprajay Danny
-                        </h3>
-                    </Link>
+                    {/*<Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">*/}
+                    {/*    <h3 className="self-center text-white text-2xl font-semibold whitespace-nowrap ">*/}
+                    {/*        Uprajay Danny*/}
+                    {/*    </h3>*/}
+                    {/*</Link>*/}
                     <button
                         onClick={toggleMenu}
                         type="button"
@@ -215,7 +215,7 @@ const Home = () => {
 
                                 Salut, je m'appelle Danny, j'ai 27 ans et je suis développeur web. J'ai
                                 récemment achevé ma formation en développement web chez Human Booster, validant ainsi le
-                                titre RNCP niveau 5 (BAC+ 2). <br/> <br/> Je souhaite désormais mettre en pratiques mes compétences
+                                titre RNCP niveau 5 (BAC+ 2). <br/> br Je souhaite désormais mettre en pratiques mes compétences
                                 dans le monde professionnel.
                             </p>
                             <p className={'mb-10'}>| Technologies : <i
