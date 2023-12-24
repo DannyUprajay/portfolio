@@ -93,25 +93,8 @@ const Home = () => {
 
     return (
         <>
-<header className={"justify-between flex items-center"}>
 
-
-
-            <h3>salut</h3>
-
-            <a href={assets.cv} download={"Cv"}>
-                <button className="font-bold py-2 px-4 rounded inline-flex items-center">
-                    <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 20 20">
-                        <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
-                    </svg>
-                    <p>Mon CV</p>
-                </button>
-            </a>
-
-
-</header>
-            <nav className=" ">
+            <nav >
                 <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
                     {/*<Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">*/}
                     {/*    <h3 className="self-center text-white text-2xl font-semibold whitespace-nowrap ">*/}
@@ -145,12 +128,13 @@ const Home = () => {
                         } w-full md:block md:w-auto`}
                         id="navbar-default"
                     >
+                        <p>UD</p>
                         {/*<ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">*/}
                         <ul className={'navbar-nav'}>
                             <li>
 
                                 <a href={'#presentation'}
-                                   className="block py-2 px-3 nav_link text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                                   className="block py-2 px-3 nav_link text-center rounded md:border-0  md:p-0 "
                                 >
                                     Présentation
                                 </a>
@@ -158,14 +142,14 @@ const Home = () => {
                             <li>
 
                                 <a href={'#projet'}
-                                    className="block py-2 px-3 nav_link  text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                                   className="block py-2 px-3 nav_link  text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                                 >
                                     Projets
                                 </a>
                             </li>
                             <li>
                                 <a href={'#contact'}
-                                    className="block nav_link py-2 px-3 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0  dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                                   className="block nav_link py-2 px-3 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0  dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                                 >
                                     Me contacter
                                 </a>
@@ -175,7 +159,27 @@ const Home = () => {
                 </div>
             </nav>
 
+            <section>
+                <header className={"header justify-between flex items-center"}>
+
+
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+
+                    <a href={assets.cv} download={"Cv"}>
+                        <button className="font-bold py-2 px-4 rounded inline-flex items-center">
+                            <p>Mon CV</p>
+                        </button>
+                    </a>
+
+
+                </header>
+            </section>
             <main className={'container mx-auto w-1/2'}  style={{position: "relative",  overflow: 'hidden'}}>
+
+
+
+
 
                     <section className="portfolio text-left section" id={'home'}>
 
@@ -461,12 +465,6 @@ const Home = () => {
                 </section>
 
             </main>
-            <footer className={'flex h-40 justify-center items-center'}>
-                <h2 className={"text-center"}>
-                    Portofolio Uprajay danny
-                </h2>
-
-            </footer>
 
         </>
 

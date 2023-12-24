@@ -10,18 +10,28 @@
 
 }
 
-header{
-    height: calc(45px + 3.6rem);
-    padding: 0 3.6rem;
-    position: sticky;
+
+ header{
+    height: calc(45px + 2.6rem);
+    padding: 0 8.6rem;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 20;
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     font-weight: 700;
-
-
+    margin-left: 5rem;
+    color: #f3ddc6;
+    /*background-color: #1b374e;*/
 }
+header a i{
+    font-size: 1.4rem;
+}
+header a i:hover{
+    color: greenyellow;
+}
+
 
 main{
     min-width: 1342px;
@@ -36,9 +46,10 @@ nav {
     /*width: 100%;*/
     /*z-index: 1;*/
     width: 5rem;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-color: black;
+    z-index: 100;
 }
 .navbar-nav{
     list-style: none;
@@ -52,10 +63,6 @@ nav {
 .navbar-nav li{
     writing-mode: vertical-rl;
     margin-bottom: 2px;
-
-
-
-
 }
 
 nav ul li{
@@ -67,9 +74,19 @@ nav ul li a{
     color: dimgray;
 }
 
+nav ul li a:hover{
+    color: white;
+    border-right: 2px solid greenyellow!important;
+    background-color: rgba(31, 31, 31, 0.78);
+}
+nav p {
+    color: white;
+    text-align: center;
+    margin: 15px 0 30px 0 ;
+}
 .active {
     color: white;
-    border-right: 3px solid greenyellow!important;
+    border-right:2px solid greenyellow!important;
     background-color: rgba(31, 31, 31, 0.78);
 }
 
@@ -87,13 +104,13 @@ body{
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
-section{
+.section{
     height: 100vh;
     /*background-color: #1b374e;*/
 }
 .portfolio {
     height: 76vh;
-    padding: 200px;
+    padding: 150px;
 
 }
 
@@ -178,7 +195,7 @@ h3{
 }
 
 .presentation{
-    padding: 200px;
+    padding: 100px;
     color: white;
     height: 110vh;
 }
