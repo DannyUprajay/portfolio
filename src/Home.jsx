@@ -204,7 +204,7 @@ const Home = () => {
                 <section id={'presentation'} className={"section presentation container mx-auto"}>
 
                     <div className={'header_sectionHeader__aMRKR'}>
-                    <h2 className={'text-center text-7xl'}>About <span></span> </h2>
+                    <h2 className={'text-center text-6xl'}>About <span></span> </h2>
                     <div className="header_line__AkXvu"></div>
                     </div>
 
@@ -241,11 +241,14 @@ const Home = () => {
 
                 </section>
 
-                <hr/>
                 <a name="projet"></a>
                 <section id={'projet'} className="section projet grid grid-cols-1 text-center justify-center items-center relative">
 
-                    <h2 className={"text-white text-center"}>Projets récents</h2>
+                    <div className={'header_sectionHeader__aMRKR'}>
+                        <div className="header_line__AkXvu"></div>
+
+                        <h2 className={"text-white text-center text-6xl mx-auto"}>Projets <span></span></h2>
+                    </div>
 
                     <div className={"flex justify-center"}>
 
@@ -343,8 +346,8 @@ const Home = () => {
                                 <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
                                     Mon profil vous intéresse ? </p>
                                 <h2
-                                    className="font-heading mb-4 mt-5 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
-                                    Contactez-moi
+                                    className="font-heading text-center mx-auto mb-4 mt-5 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
+                                    Contactez-moi <span></span>
                                 </h2>
 
                             </div>
@@ -428,7 +431,7 @@ const Home = () => {
                                                     <label htmlFor="name"
                                                            className="pb-1 text-xs uppercase tracking-wider"></label>
                                                     <input type="text" id="name" autoComplete="given-name"
-                                                           placeholder="Nom*"
+                                                           placeholder="Nom"
                                                            className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0"
                                                            name="to_name"/>
 

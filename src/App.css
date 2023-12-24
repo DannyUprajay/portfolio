@@ -109,7 +109,8 @@ body{
     /*background-color: #1b374e;*/
 }
 .portfolio {
-    height: 76vh;
+    margin-top: 100px;
+    height: 85vh;
     padding: 150px;
 
 }
@@ -228,18 +229,20 @@ h3{
 
  }
 .card{
-    background-color: #4e5f51;
-    border: 1px solid white;
+
+    border: 1px solid greenyellow;
 }
 
 
 p {
     font-size: 1.2rem;
 }
-
-.projet h6{
-    font-size: 1.5rem;
+.projet{
+    height: 90vh;
+    /*background-color: red;*/
+    margin-bottom: 300px;
 }
+
 hr {
     width:90%;
     position: relative;
@@ -247,12 +250,13 @@ hr {
 }
 
 #contact{
-    background-color: #1b374e;
+    /*background-color: #1b374e;*/
+    border: 1px solid greenyellow;
 }
 form button {
-    background-color: #1b374e!important;
-    color: white;
+    background-color: greenyellow!important;
 }
+
 .projet .card{
     width: 740px;
 
