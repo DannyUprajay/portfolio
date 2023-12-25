@@ -1,13 +1,11 @@
-import React, {useRef, useState, useEffect } from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import './App.css';
 import emailjs from '@emailjs/browser';
 import validator from "validator/es";
 import assets from "./asset.jsx";
-import {Link} from "react-router-dom";
-
-
-
-
+// import {Link} from "react-router-dom";
+import Fade from 'react-reveal/Fade';
+import Reveal from 'react-reveal/';
 
 
 const Home = () => {
@@ -94,7 +92,7 @@ const Home = () => {
     return (
         <>
 
-            <nav >
+            <nav>
                 <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
                     {/*<Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">*/}
                     {/*    <h3 className="self-center text-white text-2xl font-semibold whitespace-nowrap ">*/}
@@ -128,9 +126,14 @@ const Home = () => {
                         } w-full md:block md:w-auto`}
                         id="navbar-default"
                     >
+                        <Fade top delay={1000}>
+
                         <p>UD</p>
+                    </Fade>
+
                         {/*<ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">*/}
                         <ul className={'navbar-nav'}>
+                            <Fade left delay={200}>
                             <li>
 
                                 <a href={'#presentation'}
@@ -139,6 +142,9 @@ const Home = () => {
                                     Présentation
                                 </a>
                             </li>
+                                </Fade>
+                            <Fade left delay={400}>
+
                             <li>
 
                                 <a href={'#projet'}
@@ -147,6 +153,9 @@ const Home = () => {
                                     Projets
                                 </a>
                             </li>
+                            </Fade>
+                            <Fade left delay={600}>
+
                             <li>
                                 <a href={'#contact'}
                                    className="block nav_link py-2 px-3 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0  dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
@@ -154,6 +163,8 @@ const Home = () => {
                                     Me contacter
                                 </a>
                             </li>
+                            </Fade>
+
                         </ul>
                     </div>
                 </div>
@@ -162,119 +173,159 @@ const Home = () => {
             <section>
                 <header className={"header justify-between flex items-center"}>
 
+<div className={'flex gap-3'}>
 
-                    <a href="https://github.com/" target="_blank"
+    <Fade top delay={1000}>
+
+                    <a href="https://github.com/DannyUprajay" target="_blank"
                        rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+    </Fade>
+    <Fade top delay={1400}>
+
+                    <a href="https://www.linkedin.com/in/danny-uprajay/" target="_blank"
+                       rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+</Fade>
+
+</div>
+                    <Fade top delay={1800}>
 
                     <a href={assets.cv} download={"Cv"}>
                         <button className="font-bold py-2 px-4 rounded inline-flex items-center">
                             <p>Mon CV</p>
                         </button>
                     </a>
+                    </Fade>
 
 
                 </header>
             </section>
-            <main className={'container mx-auto w-1/2'}  style={{position: "relative",  overflow: 'hidden'}}>
+            <main className={'container mx-auto w-1/2'} style={{position: "relative", overflow: 'hidden'}}>
 
 
+                <section className="portfolio text-left section" id={'home'}>
+
+                    <Reveal>
+
+                    <h1 className="font-bold ">Hey, je suis Danny<span></span></h1>
+                    <h4>Je suis <span>Développeur web</span></h4>
+                    <p>Je viens tout juste de finir ma formation de développeur web </p>
 
 
+                    <a
+                        href="#contact"
 
-                    <section className="portfolio text-left section" id={'home'}>
+                    >
+                        <button>Me contacter
+                        </button>
 
-                        <h1 className="font-bold ">Hey,I'm Danny<span></span></h1>
-                        <h4>Je suis <span>Développeur web</span> </h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dignissimos enim error esse et eum labore laboriosam laudantium obcaecati quam quia quisquam quo repellendus rerum sint suscipit temporibus, veniam voluptas?</p>
+                    </a>
+                    </Reveal>
 
-                        <a
-                            href="#contact"
-
-                        >
-                            <button>Me contacter
-                            </button>
-
-                        </a>
-
-                    </section>
-
+                </section>
 
 
                 <a name="presentation"></a>
                 <section id={'presentation'} className={"section presentation container mx-auto"}>
-
+                <Reveal>
                     <div className={'header_sectionHeader__aMRKR'}>
-                    <h2 className={'text-center text-6xl'}>About <span></span> </h2>
-                    <div className="header_line__AkXvu"></div>
+                        <h2 className={'text-center text-6xl'}>About <span></span></h2>
+                        <div className="header_line__AkXvu"></div>
                     </div>
-
+                </Reveal>
 
                     <div className={'grid lg:grid-cols-2 md:grid-cols-1 container mx-auto gap-20 '}>
 
 
-
                         <div className={'text-left col-2  '}>
 
+                        <Reveal duration={1000} delay={1000}>
                             <p className={'text-left mb-10'}>
 
                                 Salut ! Je m'appelle Danny, j'ai 27 ans et je suis développeur web. J'ai
                                 récemment achevé ma formation en développement web chez Human Booster, validant ainsi le
-                                titre RNCP niveau 5 (BAC+ 2). <br/> <br/>
+                                titre RNCP niveau 5 (BAC+ 2).
 
+                                <br/> <br/>
 
-
-                                Au cours de ma formation, j'ai eu l'opportunité de me plonger dans plusieurs langages de programmation,
-                                tels que PHP avec son fidèle compagnon Symfony,
-                                ainsi que JavaScript avec son framework Angular en utilisant TypeScript.
-                                C'était une expérience vraiment enrichissante ! 🚀
+                                Pendant ma formation, j'ai eu l'opportunité d'explorer divers langages de programmation tels
+                                que PHP avec son remarquable framework Symfony, ainsi que JavaScript avec son framework Angular.
+                                Cette expérience a été vraiment enrichissante ! 🚀
 
                                 <br/><br/>
 
-                                Je souhaite désormais mettre en pratiques mes compétences
-                                dans le monde professionnel.
+                                En dehors de cela, je suis passionné par la 3D. Ayant acquis une bonne expérience personnelle
+                                sur Blender par le passé, je me lance actuellement le défi de combiner ma passion pour la 3D avec le codage en utilisant Three.js.
+
+                                <br/><br/>
+
+                                Je suis actuellement à la recherche de nouvelles opportunités où je pourrais en apprendre plus sur ma passion pour le code.
+                                Si vous pensez avoir une offre qui pourrait m'intéresser, faisons connaissance ! 🔗
+
+
                             </p>
+                        </Reveal>
+                        <Reveal>
+                            <div className={' flex items-center'}>
 
-                            <div className={'flex'}>
+                                <p className={'link'}>Liens <i className="fa-solid fa-arrow-right"></i></p>
 
-                            <p>Liens :</p>
-                            <a href="https://github.com/" target="_blank"
-                                   rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+                                <div className={'link_icon flex gap-5'}>
+
+
+                                    <a href="https://github.com/DannyUprajay" target="_blank" rel="noopener noreferrer"><i
+                                        className="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/danny-uprajay/" target="_blank" rel="noopener noreferrer"><i
+                                        className="fa-brands fa-linkedin"></i></a>
+                                </div>
                             </div>
+                        </Reveal>
                         </div>
 
 
+                        <div className={'resume_tech'}>
+                            <div className={'resume_tech mb-14'}>
+                            <Reveal>
+                                <h5 className={'text-2xl mb-6'}> <i className="fa-solid fa-graduation-cap"></i> Utilisée en cours</h5>
+                        </Reveal>
 
+                            <Reveal>
+                                <div className={'flex gap-2 mb-4'}>
+                                    <span className={'tech'}>JavaScript</span>
+                                    <span className={'tech'}>TypeScript</span>
+                                    <span className={'tech'}>Angular</span>
+                                    <span className={'tech'}>HTML</span>
+                                </div>
+                        </Reveal>
 
-                        <div>
-                            <div className={'mb-14'}>
-                            <h5 className={'text-2xl mb-6'}>Utilisée en cours</h5>
-                            <div className={'flex gap-2 mb-4'}>
-                                <span className={'tech'}>JavaScript</span>
-                                <span className={'tech'}>TypeScript</span>
-                                <span className={'tech'}>Angular</span>
-                                <span className={'tech'}>HTML</span>
-                            </div>
-                            <div className={'flex gap-2 mb-4'}>
-                                <span className={'tech'}>Symfony</span>
-                                <span className={'tech'}>Bootstrap</span>
-                                <span className={'tech'}>PHP</span>
-                                <span className={'tech'}>MYSQL</span>
-                                <span className={'tech'}>Github</span>
-                            </div>
-                            <div className={'flex gap-2'}>
-                                <span className={'tech'}>CSS</span>
-                                <span className={'tech'}>SCSS</span>
-                                <span className={'tech'}>Postman</span>
+                            <Reveal>
+                                <div className={'flex gap-2 mb-4'}>
+                                    <span className={'tech'}>Symfony</span>
+                                    <span className={'tech'}>Bootstrap</span>
+                                    <span className={'tech'}>PHP</span>
+                                    <span className={'tech'}>MYSQL</span>
+                                    <span className={'tech'}>Github</span>
+                                </div>
+                        </Reveal>
+                    <Reveal>
+                                <div className={'flex gap-2'}>
+                                    <span className={'tech'}>CSS</span>
+                                    <span className={'tech'}>SCSS</span>
+                                    <span className={'tech'}>Postman</span>
 
+                                </div>
+                </Reveal>
                             </div>
-                            </div>
-                            <h5 className={'text-2xl mb-6'}>Utilisée personnellement </h5>
+                        <Reveal>
+                            <h5 className={'text-2xl mb-6'}> <i className="fa-solid fa-face-smile"></i> Utilisée personnellement </h5>
+                    </Reveal>
+                        <Reveal>
                             <div className={'flex gap-2 mb-4'}>
                                 <span className={'tech'}>React.js</span>
                                 <span className={'tech'}>Three.js</span>
                                 <span className={'tech'}>Tailwind</span>
                                 <span className={'tech'}>Blender</span>
                             </div>
+                    </Reveal>
                         </div>
 
                     </div>
@@ -282,7 +333,8 @@ const Home = () => {
                 </section>
 
                 <a name="projet"></a>
-                <section id={'projet'} className="section projet grid grid-cols-1 text-center justify-center items-center relative">
+                <section id={'projet'}
+                         className="section projet grid grid-cols-1 text-center justify-center items-center relative">
 
                     <div className={'header_sectionHeader__aMRKR'}>
                         <div className="header_line__AkXvu"></div>
@@ -293,9 +345,10 @@ const Home = () => {
                     <div className={"flex justify-center"}>
 
 
-                        <div className={"grid grid-cols-1 justify-center items-center gap-5 "}>
-
-                            <div className={` overflow-hidden card relative flex bg-clip-border rounded-xl bg-white text-gray-700 border-white shadow-md flex-row`}>
+                        <div className={"grid grid-cols-1 justify-center items-center gap-5 text_projet "}>
+                            <Fade left>
+                            <div
+                                className={` overflow-hidden card relative flex bg-clip-border rounded-xl bg-white text-gray-700 border-white shadow-md flex-row`}>
                                 <div
                                     className=" m-0 text-gray-700 rounded-r-none overflow-hidden  bg-clip-border rounded-xl shrink-0">
                                     <img src={assets.logoNft} alt="card-image-projetNft"
@@ -304,12 +357,12 @@ const Home = () => {
 
                                 <div className="p-6 mt-5 w-10/12 justify-end ">
                                     <h6
-                                        className="block mb-4 font-sans antialiased font-semibold leading-relaxed tracking-normal uppercase">
+                                        className="block mb-4 text-2xl font-sans antialiased font-semibold leading-relaxed tracking-normal uppercase">
                                         Lové NFT
                                     </h6>
 
-                                    <p className="block mb-8 font-sans antialiased font-normal leading-relaxed ">
-                                        Lové NFT est une application web qui permet de des NFT et bien plus encore...
+                                    <p className="block mb-8 text_projet ">
+                                        Lové NFT est une application web qui permet de des NFT et bien plus encore
                                     </p>
 
                                     <div className={'mb-5 flex justify-around'}>
@@ -336,8 +389,11 @@ const Home = () => {
                                 </div>
 
                             </div>
+                                </Fade>
 
-                            <div  className={` overflow-hidden card relative flex bg-clip-border rounded-xl bg-white text-gray-700 border-white shadow-md flex-row`}>
+                            <Fade right>
+                            <div
+                                className={` overflow-hidden card relative flex bg-clip-border rounded-xl bg-white text-gray-700 border-white shadow-md flex-row`}>
 
                                 <div
                                     className="relative w-5/5 m-0 overflow-hidden  text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
@@ -347,11 +403,11 @@ const Home = () => {
                                 </div>
                                 <div className="p-6 mt-5">
                                     <h6
-                                        className="block  mb-4 font-sans antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
+                                        className="block text-2xl mb-4 font-sans antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
                                         MMA PULSE
                                     </h6>
-                                    <p className="block mb-8 font-sans antialiased font-normal leading-relaxed ">
-                                        MMA PULSE est un site pour explorer le club, ses sports et plus encore ...
+                                    <p className="block mb-8 text_projet">
+                                        MMA PULSE est un site pour explorer le club, ses sports et plus encore
                                     </p>
                                     <div className={'mb-5 flex justify-around'}>
                                         <h3>Symfony <i
@@ -368,7 +424,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-
+                            </Fade>
 
                         </div>
 
@@ -376,8 +432,12 @@ const Home = () => {
 
                 </section>
 
+
+
                 <a name="contact"></a>
-                <section  className="section" id="contact">
+
+            <Reveal>
+                <section className="section" id="contact">
 
                     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
 
@@ -506,7 +566,7 @@ const Home = () => {
                     </div>
 
                 </section>
-
+                </Reveal>
             </main>
 
         </>
