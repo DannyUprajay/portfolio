@@ -217,24 +217,64 @@ const Home = () => {
 
                             <p className={'text-left mb-10'}>
 
-                                Salut, je m'appelle Danny, j'ai 27 ans et je suis développeur web. J'ai
+                                Salut ! Je m'appelle Danny, j'ai 27 ans et je suis développeur web. J'ai
                                 récemment achevé ma formation en développement web chez Human Booster, validant ainsi le
-                                titre RNCP niveau 5 (BAC+ 2). <br/> br Je souhaite désormais mettre en pratiques mes compétences
+                                titre RNCP niveau 5 (BAC+ 2). <br/> <br/>
+
+
+
+                                Au cours de ma formation, j'ai eu l'opportunité de me plonger dans plusieurs langages de programmation,
+                                tels que PHP avec son fidèle compagnon Symfony,
+                                ainsi que JavaScript avec son framework Angular en utilisant TypeScript.
+                                C'était une expérience vraiment enrichissante ! 🚀
+
+                                <br/><br/>
+
+                                Je souhaite désormais mettre en pratiques mes compétences
                                 dans le monde professionnel.
                             </p>
-                            <p className={'mb-10'}>| Technologies : <i
-                                className="fa-brands fa-symfony "></i> <i className="fa-brands fa-angular"></i> <i
-                                className="fa-brands fa-react"></i> <i className="fa-solid fa-database"></i>
-                                <i className="fa-brands fa-bootstrap"></i> <i className="fa-brands fa-figma"></i> |</p>
 
+                            <div className={'flex'}>
+
+                            <p>Liens :</p>
+                            <a href="https://github.com/" target="_blank"
+                                   rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+                            </div>
                         </div>
 
 
 
 
-                        <div className={""}>
-                            <h5>Utilisée en cours</h5>
+                        <div>
+                            <div className={'mb-14'}>
+                            <h5 className={'text-2xl mb-6'}>Utilisée en cours</h5>
+                            <div className={'flex gap-2 mb-4'}>
+                                <span className={'tech'}>JavaScript</span>
+                                <span className={'tech'}>TypeScript</span>
+                                <span className={'tech'}>Angular</span>
+                                <span className={'tech'}>HTML</span>
+                            </div>
+                            <div className={'flex gap-2 mb-4'}>
+                                <span className={'tech'}>Symfony</span>
+                                <span className={'tech'}>Bootstrap</span>
+                                <span className={'tech'}>PHP</span>
+                                <span className={'tech'}>MYSQL</span>
+                                <span className={'tech'}>Github</span>
+                            </div>
+                            <div className={'flex gap-2'}>
+                                <span className={'tech'}>CSS</span>
+                                <span className={'tech'}>SCSS</span>
+                                <span className={'tech'}>Postman</span>
 
+                            </div>
+                            </div>
+                            <h5 className={'text-2xl mb-6'}>Utilisée personnellement </h5>
+                            <div className={'flex gap-2 mb-4'}>
+                                <span className={'tech'}>React.js</span>
+                                <span className={'tech'}>Three.js</span>
+                                <span className={'tech'}>Tailwind</span>
+                                <span className={'tech'}>Blender</span>
+                            </div>
                         </div>
 
                     </div>
@@ -366,7 +406,7 @@ const Home = () => {
                                         <li className="flex">
 
                                             <div
-                                                className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                                                className="flex h-10 w-10 items-center justify-center rounded text-gray-50">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                      viewBox="0 0 24 24"
                                                      fill="none" stroke="currentColor" className="h-6 w-6">
@@ -380,7 +420,7 @@ const Home = () => {
 
                                             <div className="ml-4 mb-4">
                                                 <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Adresse
-                                                    :
+
                                                 </h3>
                                                 <p className="text-gray-600 dark:text-slate-400">20 rue de la
                                                     république</p>
@@ -391,7 +431,7 @@ const Home = () => {
                                         <li className="flex">
 
                                             <div
-                                                className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                                                className="flex h-10 w-10 items-center justify-center rounded text-gray-50">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                      viewBox="0 0 24 24"
                                                      fill="none" stroke="currentColor" className="h-6 w-6">
