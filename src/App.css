@@ -195,6 +195,7 @@ h3{
 }
 
 .presentation{
+    background: greenyellow;
     padding: 100px;
     color: white;
     height: 90vh;
@@ -271,6 +272,8 @@ p {
 }
 
 .projet{
+    background: goldenrod;
+
     height: 90vh;
     /*background-color: red;*/
     margin-bottom: 300px;
@@ -293,6 +296,7 @@ p {
 
 #contact{
     /*background-color: #1b374e;*/
+    background: greenyellow;
 
     border: 1px solid #832437;
 }
