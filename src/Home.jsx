@@ -206,7 +206,7 @@ const Home = () => {
 
                     <Reveal>
 
-                    <h1 className="font-bold ">Hey, je suis Danny<span></span></h1>
+                    <h1 className="font-bold ">Hey, je m'appelle Danny<span></span></h1>
                     <h4>Je suis <span>Développeur web</span></h4>
                     <p>Je viens tout juste de finir ma formation de développeur web </p>
 
@@ -285,7 +285,7 @@ const Home = () => {
                         <div className={'resume_tech'}>
                             <div className={'resume_tech mb-14'}>
                             <Reveal>
-                                <h5 className={'text-2xl mb-6'}> <i className="fa-solid fa-graduation-cap"></i> Utilisée en cours</h5>
+                                <h5 className={'text-2xl mb-6'}> <i className="fa-solid fa-user-graduate"></i> Utilisée en cours</h5>
                         </Reveal>
 
                             <Reveal>
@@ -316,7 +316,7 @@ const Home = () => {
                 </Reveal>
                             </div>
                         <Reveal>
-                            <h5 className={'text-2xl mb-6'}> <i className="fa-solid fa-face-smile"></i> Utilisée personnellement </h5>
+                            <h5 className={'text-2xl mb-6'}> <i className="fa-solid fa-user-clock"></i> Utilisée personnellement </h5>
                     </Reveal>
                         <Reveal>
                             <div className={'flex gap-2 mb-4'}>
@@ -331,10 +331,9 @@ const Home = () => {
                     </div>
 
                 </section>
-
                 <a name="projet"></a>
                 <section id={'projet'}
-                         className="section projet grid grid-cols-1 text-center justify-center items-center relative">
+                         className="section container mx-auto projet grid grid-cols-1 text-center justify-center items-center relative">
 
                     <div className={'header_sectionHeader__aMRKR'}>
                         <div className="header_line__AkXvu"></div>
@@ -403,7 +402,7 @@ const Home = () => {
                                 </div>
                                 <div className="p-6 mt-5">
                                     <h6
-                                        className="block text-2xl mb-4 font-sans antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
+                                        className="block text-2xl mb-4  font-semibold   uppercase">
                                         MMA PULSE
                                     </h6>
                                     <p className="block mb-8 text_projet">
@@ -437,7 +436,7 @@ const Home = () => {
                 <a name="contact"></a>
 
             <Reveal>
-                <section className="section" id="contact">
+                <section className="section container mx-auto" id="contact">
 
                     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
 
