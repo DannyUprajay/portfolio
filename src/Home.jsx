@@ -112,7 +112,7 @@ const Home = () => {
                                     <a href={'#presentation'}
                                        className="block py-2 px-3 nav_link text-center rounded md:border-0  md:p-0 "
                                     >
-                                        Présentation
+                                        About
                                     </a>
                                 </li>
                             </Fade>
@@ -123,7 +123,7 @@ const Home = () => {
                                     <a href={'#projet'}
                                        className="block py-2 px-3 nav_link  text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                                     >
-                                        Projets
+                                        Projects
                                     </a>
                                 </li>
                             </Fade>
@@ -133,7 +133,7 @@ const Home = () => {
                                     <a href={'#contact'}
                                        className="block nav_link py-2 px-3 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0  dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                                     >
-                                        Me contacter
+                                        Contact
                                     </a>
                                 </li>
                             </Fade>
@@ -327,7 +327,7 @@ const Home = () => {
                     <div className={'header_sectionHeader__aMRKR'}>
                         <div className="header_line__AkXvu"></div>
 
-                        <h2 className={"text-white text-center text-6xl mx-auto"}>Projets <span></span></h2>
+                        <h2 className={"text-white text-center text-6xl mx-auto"}>Projects <span></span></h2>
                     </div>
 
                     <div className={"flex justify-center"}>
