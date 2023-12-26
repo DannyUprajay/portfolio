@@ -499,11 +499,17 @@ form {
         right: 40px;
     }
 
+    .portfolio button{
+        position: relative;
+        left: -45px;
+    }
+
     .navbar-nav li {
         position: relative;
         left: 40px;
         /*margin-left: 20px;*/
     }
+
 
     nav p {
         position: relative;
@@ -564,6 +570,11 @@ form {
     #contact {
         height: 120vh;
         border: none;
+    }
+
+    .link_icon{
+        position: relative;
+        top: 15px;
     }
 
 }
@@ -633,6 +644,18 @@ form {
 
 @media screen and (max-width: 600px) {
 
+    h1 span{
+        color: #832437;
+        height: 13px;
+        width: 13px;
+        align-items: center;
+        background-color: #832437;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: bottom;
+
+    }
+
     header{
         margin-left: 40px;
     }
@@ -688,10 +711,6 @@ form {
         width: 250px;
     }
 
-    /*#contact {*/
-    /*    height: 100vh;*/
-    /*    border: none;*/
-    /*}*/
     #contact .card {
         width: 400px;
         border: none;
@@ -736,11 +755,16 @@ form {
     }
 
     .portfolio h1 {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 
     nav p {
         margin-bottom: 50px;
+    }
+
+    .link_icon{
+        position: relative;
+        top: 32px;
     }
 }
 
@@ -776,7 +800,7 @@ form {
 
     .portfolio p {
         position: relative;
-        right: 10px;
+        right: 15px;
         font-size: .8rem;
 
     }
@@ -804,9 +828,24 @@ form {
         position: relative;
         right: 30px;
     }
-}
 
-@media screen and (max-width: 519px) {
+    .portfolio button{
+        position: relative;
+        left: -15px;
+    }
+    .presentation p {
+        font-size: 1rem;
+    }
+
+    .link_icon {
+        position: relative;
+        top: 31px;
+    }
+
+    .presentation{
+        height: 150vh;
+    }
+
     .presentation p {
         font-size: 1rem;
     }
@@ -817,6 +856,8 @@ form {
     }
 }
 
+
+
 @media screen and (max-width: 504px) {
     .portfolio p {
         position: relative;
@@ -826,9 +867,17 @@ form {
 }
 
 @media screen and (max-width: 500px) {
+
+
+    .presentation{
+        height: 110vh;
+    }
 .presentation p{
     font-size: 1.2vh;
 }
+    .presentation .tech {
+        font-size: 1.2vh!important;
+    }
 
 }
 @media screen and (max-width: 476px) {
