@@ -3,15 +3,12 @@ import './App.css';
 import emailjs from '@emailjs/browser';
 import validator from "validator/es";
 import assets from "./asset.jsx";
-// import {Link} from "react-router-dom";
-import Fade from 'react-reveal/Fade';
-import Reveal from 'react-reveal/';
-
+import { Fade } from 'react-reveal';
+import {Reveal} from 'react-reveal/';
+import {Helmet} from "react-helmet";
 
 const Home = () => {
 
-    // Nav
-    const [isMenuOpen, setMenuOpen] = useState(false);
 
     const navLinks = useRef([]);
     const sectionEls = useRef([]);
@@ -91,7 +88,13 @@ const Home = () => {
 
     return (
         <>
-
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Portofolio Danny </title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta name="keywords" content="web development, portfolio, React, JavaScript, programming"/>
+                <meta name="description" content="Author: Uprajay Danny, Category: Web"/>
+            </Helmet>
             <nav>
                 <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
                     <div>
@@ -147,12 +150,12 @@ const Home = () => {
                         <Fade top delay={1000}>
 
                             <a href="https://github.com/DannyUprajay" target="_blank"
-                               rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+                               rel="noopener noreferrer " name="GitHub profile" aria-label="Github profile" ><i className="fa-brands fa-github" ></i></a>
                         </Fade>
                         <Fade top delay={1400}>
 
                             <a href="https://www.linkedin.com/in/danny-uprajay/" target="_blank"
-                               rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+                               rel="noopener noreferrer" name="Linkedin profile"  aria-label="Linkedin profile"><i className="fa-brands fa-linkedin"></i></a>
                         </Fade>
 
                     </div>
@@ -247,10 +250,10 @@ const Home = () => {
                                     <div className={'link_icon flex gap-5'}>
 
 
-                                        <a href="https://github.com/DannyUprajay" target="_blank"
+                                        <a href="https://github.com/DannyUprajay" name="GitHub profile" aria-label="Github profile"  target="_blank"
                                            rel="noopener noreferrer"><i
                                             className="fa-brands fa-github"></i></a>
-                                        <a href="https://www.linkedin.com/in/danny-uprajay/" target="_blank"
+                                        <a href="https://www.linkedin.com/in/danny-uprajay/" name="Linkedin profile" aria-label="Linkedin profile"  target="_blank"
                                            rel="noopener noreferrer"><i
                                             className="fa-brands fa-linkedin"></i></a>
                                     </div>
