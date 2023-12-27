@@ -489,6 +489,14 @@ form {
 
 
 @media screen and (max-width: 900px) {
+    header a {
+        position: relative;
+        left: -120px;
+    }
+    .cv{
+        position: relative;
+        left: 20px;
+    }
     .portfolio h1, h4, a {
         position: relative;
         right: 40px;
@@ -576,6 +584,12 @@ form {
         position: relative;
         top: 15px;
     }
+
+    header a {
+        position: relative;
+        top: 0;
+    }
+
 
 }
 
@@ -724,7 +738,6 @@ form {
     .navbar-nav li {
         position: relative;
         left: 30px;
-        /*margin-left: 20px;*/
     }
 
     #contact h2:last-child {
@@ -749,9 +762,15 @@ form {
         left: -100px;
     }
 
-    .cv {
+    header a {
         position: relative;
-        left: 0;
+        top: -20px;
+        /*left: -120px;*/
+    }
+    .cv{
+        position: relative;
+        top: -20px;
+        left: 50px;
     }
 
     .portfolio h1 {
@@ -858,13 +877,7 @@ form {
 
 
 
-@media screen and (max-width: 504px) {
-    .portfolio p {
-        position: relative;
-        right: 30px;
-    }
 
-}
 
 @media screen and (max-width: 500px) {
 
@@ -899,6 +912,8 @@ form {
     .presentation .resume_tech span{
         font-size: .8rem;
     }
+
+
 
 }
 
@@ -948,6 +963,10 @@ form {
     .portfolio button {
         position: relative;
         left: -20px;
+    }
+    .portfolio p {
+        position: relative;
+        right: 20px;
     }
     #contact p{
         font-size: 1rem;

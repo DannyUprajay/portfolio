@@ -89,7 +89,6 @@ const Home = () => {
     return (
         <>
             <Helmet>
-
                 <meta charSet="utf-8" />
                 <title>Portofolio Danny </title>
                 <link rel="canonical" href="http://mysite.com/example" />
