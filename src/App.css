@@ -756,20 +756,16 @@ form {
         left: -8px;
     }
 
-    header a {
-        margin-top: 50px;
-        position: relative;
-        left: -100px;
-    }
 
     header a {
         position: relative;
-        top: -20px;
-        /*left: -120px;*/
+        left: -100px;
+        top: 0;
+
     }
     .cv{
         position: relative;
-        top: -20px;
+        top: 0;
         left: 50px;
     }
 
@@ -1090,6 +1086,11 @@ display: none;
     }
 }
 @media screen and (max-width: 385px){
+    .cv{
+        position: relative;
+        top: 0;
+        left: -10px;
+    }
     .projet .card {
         width: 250px;
     }
@@ -1124,4 +1125,8 @@ display: none;
         left: 10px;
 
     }
+
+#contact .card{
+    width: 250px;
+}
 }
