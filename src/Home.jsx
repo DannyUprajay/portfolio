@@ -349,7 +349,7 @@ const Home = () => {
                                         </h6>
 
                                         <p className="block mb-8 text_projet ">
-                                            Lové NFT est une application web qui permet de des NFT et bien plus encore
+                                            Lové NFT est une application web qui permet de consulter et créer des NFT.
                                         </p>
 
                                         <div className={'mb-5 flex justify-around'}>
@@ -370,7 +370,7 @@ const Home = () => {
                                                className={"me-4 font-bold"}>Code <small>(Front)</small> <br/></a>
 
 
-                                            <a className={'font-bold'} href="#">Live démo</a>
+                                            <a className={'font-bold'} href="https://nft.danny-webdev.fr/"  target="_blank" rel="noopener noreferrer">Live démo</a>
 
                                         </div>
                                     </div>
@@ -394,7 +394,7 @@ const Home = () => {
                                             MMA PULSE
                                         </h6>
                                         <p className="block mb-8 text_projet">
-                                            MMA PULSE est un site pour explorer le club, ses sports et plus encore
+                                            MMA PULSE est un site pour explorer le club, ses sports avec un formulaire de contact
                                         </p>
                                         <div className={'mb-5 flex justify-around'}>
                                             <h3>Symfony <i
@@ -405,7 +405,7 @@ const Home = () => {
                                         <div>
                                             <a href="https://github.com/DannyUprajay/Projet-stage" target="_blank"
                                                rel="noopener noreferrer" className={"me-4 font-bold"}>Code</a>
-                                            <a href="#" className={'font-bold'}>Live démo</a>
+                                            <a href="https://mma.danny-webdev.site/" target="_blank" rel="noopener noreferrer" className={'font-bold'}>Live démo</a>
                                         </div>
                                     </div>
                                 </div>
