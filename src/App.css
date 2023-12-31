@@ -1086,6 +1086,13 @@ display: none;
 
     }
 }
+
+@media screen and (max-width: 390px){
+    #contact{
+        height: 150vh!important;
+
+    }
+}
 @media screen and (max-width: 385px){
     .cv{
         position: relative;
