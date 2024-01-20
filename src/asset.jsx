@@ -5,7 +5,7 @@ import logoNft from '../public/assets/lové-logo.png';
 // @ts-ignore
 import logoMma from '../public/assets/mmalogo.png';
 // @ts-ignore
-import cv from '../public/assets/Uprajay_danny_cv.pdf';
+import cv from '../public/assets/Uprajay-danny-cv.pdf';
 
 
 

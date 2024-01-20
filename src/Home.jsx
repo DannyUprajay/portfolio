@@ -180,7 +180,7 @@ const Home = () => {
 
                         <h1 className="font-bold ">Hey, je m'appelle Danny<span></span></h1>
                         <h4>Je suis <span>Développeur web</span></h4>
-                        <p>Je viens tout juste de finir ma formation de développeur web </p>
+                        <p>Actuellement à la recherche d'une alternance, n'hésitez pas à me contacter si mon profil vous plaît :) </p>
 
 
                         <a
